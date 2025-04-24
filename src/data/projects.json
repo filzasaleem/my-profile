@@ -1,0 +1,28 @@
+[
+    {
+      "title": "Digital CV Website",
+      "description": "I An online store with cart, login, and Stripe payment integration.",
+      "link": "https://ppcstorm.com/"
+    },
+    {
+      "title": "E-commerce Platform",
+      "description": "An online store with cart, login, and Stripe payment integration.",
+      "link": "https://yourecommerce.com"
+    },
+    {
+      "title": "Portfolio Gallery",
+      "description": "Showcase of frontend projects with animations and lightbox.",
+      "link": "https://yourportfolio.com"
+    },
+    {
+        "title": "E-commerce Platform 2",
+        "description": "An online store with cart, login, and Stripe payment integration.",
+        "link": "https://yourecommerce.com"
+      },
+      {
+        "title": "Portfolio Gallery 2",
+        "description": "Showcase of frontend projects with animations and lightbox.",
+        "link": "https://yourportfolio.com"
+      }
+  ]
+  
