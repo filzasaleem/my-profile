@@ -5,7 +5,6 @@ export default function TypeWriterLoop(){
     const [lineIndex,setLineIndex] = useState(0);
     const lines = ['Welcome to my portfolio!','Check out my work'];
     useEffect(() =>{
-        console.log("i am here");
         const interval =  setInterval(() => {
             setLineIndex((prev) => (prev + 1) % lines.length);
         }, 4000);

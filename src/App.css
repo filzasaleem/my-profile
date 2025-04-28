@@ -1,11 +1,12 @@
-body,
+
+html,body,
 #root {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  background: linear-gradient(to right, #3a6073, #16222a);
-  color: #e0e0e0;
-  flex: auto;
+  display: flex;
+  margin:0;
+  flex-direction: column;
+}
+.home-container{
+  border: 1px solid rgba(45, 50, 80, 0.3);
 }
 
 .typewriter p {
@@ -17,6 +18,59 @@ body,
   animation: typing 3s steps(30, end), blink 0.75s step-end infinite;
 }
 
+.projects-card {
+  border: 1px solid rgba(45, 50, 80, 0.3); /* #2D3250 with opacity */
+  
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 1rem;
+  z-index: 2;
+}
+.footer-container {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  
+}
+
+
+.footer-container a {
+  color: white;
+  font-size: 1.3rem;
+  transition: color 0.3s;
+}
+
+.footer-container a:hover {
+  color: #F5E8C7;
+}
+
+.tech-stack {
+  display: inline-block;
+  border: 1px solid rgba(45, 50, 80, 0.3);
+  padding: 4px 8px;
+  margin: 4px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  
+}
+
+.projects-container {
+  position: relative;
+}
+
+
+.middle-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background-color:#F5E8C7;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.custom-links{
+  background-color: #A6ABBF;
+}
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
