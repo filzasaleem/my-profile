@@ -1,5 +1,4 @@
-/* Cv.css */
-
+/* CV Container */
 .cv-container {
     width: 210mm; /* A4 paper width */
     min-height: 297mm; /* A4 paper height */
@@ -10,60 +9,179 @@
     color: #333;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border: 1px solid #ccc;
-  }
-  
-  .cv-header {
+}
+
+/* Header */
+.cv-header {
     text-align: center;
     margin-bottom: 30px;
-  }
-  
-  .cv-header h1 {
+}
+
+.cv-header h1 {
     font-size: 32px;
     margin-bottom: 5px;
-  }
-  
-  .cv-header p {
+}
+
+.cv-header p {
     font-size: 16px;
     margin: 2px 0;
-  }
-  
-  .cv-body {
+}
+
+/* Body & Sections */
+.cv-body {
     margin-bottom: 30px;
-  }
-  
-  .cv-section {
+}
+
+.cv-section {
     margin-bottom: 20px;
-  }
-  
-  .cv-section h2 {
+}
+
+.cv-section h2 {
     font-size: 24px;
     border-bottom: 2px solid #2D3250;
     padding-bottom: 5px;
     margin-bottom: 15px;
-  }
-  
-  .cv-section ul {
-    list-style-type: none;
+}
+
+.cv-section ul {
+    list-style-type: circle;
     padding: 0;
-  }
-  
-  .cv-section ul li {
+}
+
+.cv-section ul li {
     font-size: 16px;
     margin: 5px 0;
-  }
-  
-  .experience-item, .education-item {
+}
+
+/* Experience & Education */
+.experience-item, .education-item {
     margin-bottom: 15px;
-  }
-  
-  .experience-item h3, .education-item h3 {
+}
+
+.experience-item h3, .education-item h3 {
     font-size: 20px;
     margin-bottom: 5px;
-  }
-  
-  .cv-footer {
+}
+
+/* Footer */
+.cv-footer {
     text-align: center;
     font-size: 16px;
     color: #666;
-  }
-  
+}
+
+/* Media Queries */
+
+/* For tablets */
+@media (max-width: 1024px) {
+    .cv-container {
+        width: 90%;
+        min-height: auto;
+        padding: 15px;
+    }
+
+    .cv-header h1 {
+        font-size: 28px;
+    }
+
+    .cv-header p {
+        font-size: 15px;
+    }
+
+    .cv-section h2 {
+        font-size: 22px;
+    }
+
+    .cv-section ul li {
+        font-size: 15px;
+    }
+
+    .experience-item h3, .education-item h3 {
+        font-size: 18px;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 768px) {
+    .cv-container {
+        width: 95%;
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    .cv-header h1 {
+        font-size: 24px;
+    }
+
+    .cv-header p {
+        font-size: 14px;
+    }
+
+    .cv-section h2 {
+        font-size: 20px;
+    }
+
+    .cv-section ul li {
+        font-size: 14px;
+        padding-left: 18px;
+    }
+
+    .cv-section ul li::before {
+        width: 6px;
+        height: 6px;
+    }
+
+    .experience-item h3, .education-item h3 {
+        font-size: 17px;
+    }
+}
+
+/* Specific media query for A4 printing */
+@media print {
+    .cv-container {
+        width: 100%;
+        min-height: 0;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        border: none;
+    }
+
+    .cv-container * {
+        opacity: 1 !important;
+    }
+
+    body {
+        font-size: 12pt;
+        background-color: #fff;
+    }
+
+    .cv-header h1 {
+        font-size: 24pt;
+    }
+
+    .cv-header p {
+        font-size: 12pt;
+    }
+
+    .cv-section h2 {
+        font-size: 16pt;
+        border-bottom: 1px solid #333;
+    }
+
+    .cv-section ul li {
+        font-size: 11pt;
+    }
+
+    .cv-section ul li::before {
+        background-color: #000;
+    }
+
+    .experience-item h3, .education-item h3 {
+        font-size: 14pt;
+    }
+
+    .cv-footer {
+        color: #333;
+    }
+}

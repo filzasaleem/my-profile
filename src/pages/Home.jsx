@@ -6,7 +6,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import { Link } from 'react-scroll';
 
 function Home() {
-    
+
     return (
    
   <div className='home-container'>
@@ -28,7 +28,7 @@ function Home() {
         {/* Projects Section */}
         <div id="projects-section" className="projects-container container mt-4 pb-5">
         <div className='text-center m-5 pb-2'><h2>My Projects</h2></div>
-        <div className="middle-line mt-5"></div> 
+        <div className="middle-line mt-5 d-none d-md-block"></div> 
         {projcts.map((project, index) => (
             <div className="row my-4" key={index}>
             {index % 2 === 0 ? (
@@ -39,6 +39,7 @@ function Home() {
                     description={project.description}
                     link={project.link}
                     techStacks={project.techStacks}
+                    gitLink = {project.gitLink}
                     />
                 </div>
                 <div className="col-md-6"></div>
@@ -51,6 +52,7 @@ function Home() {
                     title={project.title}
                     description={project.description}
                     link={project.link}
+                    techStacks={project.techStacks}
                     />
                 </div>
              </>
